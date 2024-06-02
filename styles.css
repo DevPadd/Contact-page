@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* font classes */
+.be-vietnam-pro-thin {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.be-vietnam-pro-extralight {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.be-vietnam-pro-light {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.be-vietnam-pro-regular {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.be-vietnam-pro-medium {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.be-vietnam-pro-semibold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.be-vietnam-pro-bold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.be-vietnam-pro-extrabold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.be-vietnam-pro-black {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Header */
+
+header {
+    padding: 1rem 4rem;
+}
+
+/* Text  */
+.text-wrapper {
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+}
+.text-wrapper h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.text-wrapper h2 {
+    font-size: 2rem;
+}
+
+/* Form */
+.form-wrapper {
+    margin: 3rem auto;
+    border-radius: 2rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+    width: 60%;
+    padding: 2rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+form label {
+    display: block;
+    margin: 1.5rem 0 0.25rem 0;
+}
+
+form .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row div {
+    width: 49%;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+    width: 100%;
+    border: none;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+}
+form input {
+    padding: 1rem;
+}
+
+form textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    resize: none;
+    height: 10rem;
+    font-weight: 700;
+}
+
+form button {
+    padding: 1.25rem 1rem;
+    color: #4036a9;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+form button:hover {
+    background: rgb(206, 206, 206);
+    cursor: pointer;
+}
+form select {
+    padding: 1rem 0rem 1rem 0.5rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .text-wrapper h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .text-wrapper h2 {
+        font-size: 1.25rem;
+    }
+
+    .form-wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .form-wrapper div {
+        display: flex;
+        flex-direction: column;
+    }
+    form .form-row {
+        flex-direction: column;
+    }
+
+    .form-row div {
+        width: 100%;
+    }
+}
